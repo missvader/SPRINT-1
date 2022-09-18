@@ -1,0 +1,141 @@
+*{
+  margin: 0rem;
+  padding: 0.5rem;
+}
+body{
+  max-width: 1200px;
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+header{
+  background: url("../images/header.jpg");
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 250px;
+  position: relative;
+}
+  .menu{
+    display: flex;
+    flex: 1 1 auto;
+  }
+    .logo{
+      display: flex;
+      flex: 1 1 auto;
+      height:50px;
+    }
+      .logo img{
+        max-height:100% ;
+        object-fit:cover;
+        padding: 0rem;
+      }
+    .nav{
+      display: flex;
+      flex: 5 1 auto;
+      justify-content: space-around;
+    }
+    .social{
+      flex: 1 1 auto;
+      display: flex;
+      justify-content: flex-end;
+    }
+      a{
+        text-decoration: none;
+        color: gray;
+      }
+      a:hover{
+        color: #EF4F4F;
+      }
+  .header-text{
+    background-color: rgba(133,132,131,0.2);
+    width: 80%;
+    height: 5rem;
+    align-self: center;
+    margin-top: 0.5rem;
+    position: absolute;
+    bottom: 0;
+  }
+    h1{
+      text-align: center;
+      align-items: center;
+      color: #DF7861;
+      opacity: 0.8;
+      font-size: 1.3rem;
+    }
+section{
+  margin: 0.5rem 0;
+  background-color: black;
+  display: flex;
+}
+  .articles{
+   background-color: #4B778D; 
+   display: flex;
+   flex: 2 1 auto;
+   flex-flow: row wrap;
+  } 
+    .article{
+      background-color: #28B5B5;
+      flex: 1 1 45%;
+    }
+    .text{
+      background-color: #8FD9A8;
+      flex: 1 1 100%;
+    }
+  aside{
+    background-color: #EF4F4F;
+    flex: 1 1 auto;
+  }
+    h3{
+      background-color: #F9F871;
+    }
+    p{
+      background-color: #F9F871;
+    }
+footer{
+  background-color: black;
+}
+  .pie-pagina{
+    background-color: #FFC75F;
+  }
+@media screen and (min-width:768px) and (max-width: 1023px){
+  
+  section{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+@media screen and (max-width: 767px){
+  .menu{
+    flex-direction: column;
+  }
+  .logo{
+    max-height: 1.5rem;
+    justify-content: center;
+  }
+  .nav{
+    max-height: 1.5rem;
+    display: flex;
+  }
+  
+  .social{
+    max-height: 1.5rem;
+    justify-content: flex-end;
+    margin-top: 1rem;
+  }
+  section{
+    display:flex;
+    flex-direction: column;
+  }
+  .articles{
+    display: flex;
+    flex-direction: row;
+  }
+  
+
+}
+
