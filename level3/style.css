@@ -1,0 +1,234 @@
+*{
+  margin: 0rem;
+  padding: 0rem;
+}
+body{
+  max-width: 1200px;
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 1rem;
+}
+header{
+  background: url("../images/header.jpg");
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 250px;
+  position: relative;
+  margin-bottom: 1rem;
+}
+  .menu{
+    display: flex;
+    flex: 1 1 auto;
+    
+  }
+    .logo{
+      display: flex;
+      flex: 1 1 auto;
+      height:50px;
+      padding: 0.5rem;
+    }
+      .logo img{
+        max-height:100% ;
+        object-fit:cover;
+        padding: 0rem;
+        animation: moverDerecha 1s ease-in;
+      }
+    .nav{
+      display: flex;
+      flex: 5 1 auto;
+      justify-content: space-around;
+      padding: 0.5rem;
+    }
+    .social{
+      flex: 1 1 auto;
+      display: flex;
+      justify-content: flex-end;
+      padding: 0.5rem;
+    }
+      a{
+        text-decoration: none;
+        color: gray;
+        padding: 0.5rem;
+      }
+      a:hover{
+        color: #EF4F4F;
+      }
+  .header-text{
+    background-color: rgba(133,132,131,0.2);
+    width: 80%;
+    height: 5rem;
+    align-self: center;
+    margin-top: 0.5rem;
+    position: absolute;
+    bottom: 0;
+  }
+    h1{
+      text-align: center;
+      align-items: center;
+      color: #DF7861;
+      opacity: 0.8;
+      font-size: 1.3rem;
+      animation: moverArriba 1s ease-in;
+    }
+section{
+  background-color:white;
+  display: flex;
+  margin-bottom: 1rem;
+}
+  .articles{
+   background-color: #CFD2CF; 
+   display: flex;
+   flex: 1 1 auto;
+   flex-flow: row wrap;
+   margin-right: 0.5rem;
+  } 
+    .article{
+      background-color: #F5EDDC;
+      display: flex;
+      flex-flow: column;
+      flex: 2 1 45%;
+      margin: 1rem 0.5rem;
+      position: relative;
+    }
+      .image{
+        position: relative;
+        display: flex;
+        flex: 1 1 30%;
+        max-height: 426px;
+        margin: 1rem;
+      }
+        .image img{
+          width: 100%;
+          display: block;
+        }
+        .date{
+          position: absolute;
+          color: yellow;
+          bottom: 1rem;
+          left: 1rem;
+        }
+      .titulo{
+        background-color: #F29191;
+        color: white;
+        font-size: 1.5rem;
+        padding-top: 1rem;
+        padding-left: 0.5rem;
+        margin: 0.2rem 1rem 0.2rem 1rem;
+      }
+      .article p{
+        background-color: #F5EDDC;
+        color: gray;
+        margin: 1rem;
+        padding-bottom: 1rem;
+      }
+      .article a{
+        position: absolute;
+        bottom: 0;
+      }
+    .text{
+      background-color: #CFD2CF;
+      flex: 1 1 100%;
+      margin: 1rem;
+      text-align: center;
+    }
+  aside{
+    background-color: #CFD2CF;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+  }
+    h3{
+      background-color: #CFD2CF;
+      margin: 1rem;
+      text-align: center;
+    }
+    p{
+      background-color: #CFD2CF;
+      margin: 1rem;
+      text-align: center;
+    }
+footer{
+  background-color: #CFD2CF;
+  display: flex;
+  justify-content: center;
+}
+  .pie-pagina{
+    background-color: #F5EDDC;
+    width: 90%;
+    text-align: center;
+    
+  }
+@media screen and (min-width:768px) and (max-width: 1023px){
+  
+  section{
+    display: flex;
+    flex-direction: column;
+  }
+  aside{
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+  }
+  footer{
+    margin-right: 0.5rem;
+  }
+}
+@media screen and (max-width: 767px){
+  .menu{
+    flex-direction: column;
+  }
+  .logo{
+    max-height: 1.5rem;
+    justify-content: center;
+  }
+  .nav{
+    max-height: 1.5rem;
+    display: flex;
+  }
+  
+  .social{
+    max-height: 1.5rem;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+  }
+  section{
+    display:flex;
+    flex-direction: column;
+  }
+  .articles{
+    display: flex;
+    flex-direction: column;
+  }
+  aside{
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+  }
+  footer{
+    margin-right: 0.5rem;
+  }
+
+}
+@keyframes moverArriba{
+  0%{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moverDerecha{
+  0%{
+    opacity: 0;
+    transform:translateX(100px) ;
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
