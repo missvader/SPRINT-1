@@ -1,13 +1,13 @@
 *{
   margin: 0rem;
-  padding: 0.5rem;
+  padding: 0rem;
 }
 body{
   max-width: 1200px;
   display: flex;
   flex-flow: column nowrap;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+  margin: 1rem;
 }
 header{
   background: url("../images/header.jpg");
@@ -18,15 +18,18 @@ header{
   flex-flow: column nowrap;
   height: 250px;
   position: relative;
+  margin-bottom: 1rem;
 }
   .menu{
     display: flex;
     flex: 1 1 auto;
+    
   }
     .logo{
       display: flex;
       flex: 1 1 auto;
       height:50px;
+      padding: 0.5rem;
     }
       .logo img{
         max-height:100% ;
@@ -37,15 +40,18 @@ header{
       display: flex;
       flex: 5 1 auto;
       justify-content: space-around;
+      padding: 0.5rem;
     }
     .social{
       flex: 1 1 auto;
       display: flex;
       justify-content: flex-end;
+      padding: 0.5rem;
     }
       a{
         text-decoration: none;
         color: gray;
+        padding: 0.5rem;
       }
       a:hover{
         color: #EF4F4F;
@@ -67,39 +73,92 @@ header{
       font-size: 1.3rem;
     }
 section{
-  margin: 0.5rem 0;
-  background-color: black;
+  background-color:white;
   display: flex;
+  margin-bottom: 1rem;
 }
   .articles{
-   background-color: #4B778D; 
+   background-color: #CFD2CF; 
    display: flex;
-   flex: 2 1 auto;
+   flex: 1 1 auto;
    flex-flow: row wrap;
+   margin-right: 0.5rem;
   } 
     .article{
-      background-color: #28B5B5;
-      flex: 1 1 45%;
+      background-color: #F5EDDC;
+      display: flex;
+      flex-flow: column;
+      flex: 2 1 45%;
+      margin: 1rem 0.5rem;
+      position: relative;
     }
+      .image{
+        position: relative;
+        display: flex;
+        flex: 1 1 30%;
+        max-height: 426px;
+        margin: 1rem;
+      }
+        .image img{
+          width: 100%;
+          display: block;
+        }
+        .date{
+          position: absolute;
+          color: yellow;
+          bottom: 1rem;
+          left: 1rem;
+        }
+      .titulo{
+        background-color: #F29191;
+        color: white;
+        font-size: 1.5rem;
+        padding-top: 1rem;
+        padding-left: 0.5rem;
+        margin: 0.2rem 1rem 0.2rem 1rem;
+      }
+      .article p{
+        background-color: #F5EDDC;
+        color: gray;
+        margin: 1rem;
+        padding-bottom: 1rem;
+      }
+      .article a{
+        position: absolute;
+        bottom: 0;
+      }
     .text{
-      background-color: #8FD9A8;
+      background-color: #CFD2CF;
       flex: 1 1 100%;
+      margin: 1rem;
+      text-align: center;
     }
   aside{
-    background-color: #EF4F4F;
+    background-color: #CFD2CF;
+    display: flex;
     flex: 1 1 auto;
+    flex-direction: column;
   }
     h3{
-      background-color: #F9F871;
+      background-color: #CFD2CF;
+      margin: 1rem;
+      text-align: center;
     }
     p{
-      background-color: #F9F871;
+      background-color: #CFD2CF;
+      margin: 1rem;
+      text-align: center;
     }
 footer{
-  background-color: black;
+  background-color: #CFD2CF;
+  display: flex;
+  justify-content: center;
 }
   .pie-pagina{
-    background-color: #FFC75F;
+    background-color: #F5EDDC;
+    width: 90%;
+    text-align: center;
+    
   }
 @media screen and (min-width:768px) and (max-width: 1023px){
   
@@ -107,7 +166,13 @@ footer{
     display: flex;
     flex-direction: column;
   }
-
+  aside{
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+  }
+  footer{
+    margin-right: 0.5rem;
+  }
 }
 @media screen and (max-width: 767px){
   .menu{
@@ -126,6 +191,7 @@ footer{
     max-height: 1.5rem;
     justify-content: flex-end;
     margin-top: 1rem;
+    margin-right: 0.5rem;
   }
   section{
     display:flex;
@@ -133,9 +199,15 @@ footer{
   }
   .articles{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
-  
+  aside{
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+  }
+  footer{
+    margin-right: 0.5rem;
+  }
 
 }
 
